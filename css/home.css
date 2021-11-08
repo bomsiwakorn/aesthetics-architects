@@ -1,0 +1,380 @@
+/* ---------- Navbar ---------- */
+
+.navbar-page {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  z-index: 1;
+}
+.navbar-inner-wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo img {
+  width: 60px;
+}
+.navbar-menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.navbar-menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+}
+.navbar-menu-list div {
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 100px;
+}
+.navbar-menu-social a {
+  text-decoration: none;
+}
+.navbar-menu-social a i {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ---------- Navbar ---------- */
+
+/* ---------- Banner ---------- */
+
+.carousel-indicators {
+  right: auto !important;
+  opacity: 1 !important;
+}
+.carousel-indicators [data-bs-target] {
+  opacity: 1 !important;
+}
+.carousel-indicators .active {
+  background-color: #fdae1e !important;
+}
+
+/* ---------- Banner ---------- */
+
+/* ---------- About ---------- */
+
+.about-page {
+  width: 100%;
+  background: #363636;
+  padding: 5rem 0;
+}
+.about-inner-wrapper {
+  text-align: center;
+}
+.about-topic {
+  color: #fdae1e;
+  font-size: 34pt;
+  font-weight: 100;
+}
+.about-topic b {
+  font-size: 34pt;
+  font-weight: 600;
+}
+.about-items-wrapper {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.about-image-wrapper img {
+  display: block;
+  width: 100%;
+}
+.about-info-wrapper {
+  height: 140%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background: #333;
+  padding: 0 5rem;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.about-info-wrapper p {
+  color: #fff;
+  text-align: left;
+}
+.about-info-button {
+  text-align: left;
+}
+.about-info-button button {
+  color: #fdae1e;
+  border: 1px solid #fdae1e;
+  background: none;
+  padding: 4px 1.4rem;
+  transition: 0.2s ease-in-out;
+}
+.about-info-button button:hover {
+  background: #fdae1e;
+  color: #fff;
+}
+
+/* ---------- About ---------- */
+
+/* ---------- Overview ---------- */
+
+.overview-page {
+  width: 100%;
+  height: 330px;
+  background-color: #777;
+}
+.overview-inner-wrapper {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.overview-item {
+  text-align: center;
+}
+.overview-item-title {
+  font-size: 18px;
+  color: #fff;
+}
+#YearOfExperienceNumber,
+#OurProjectsNumber,
+#TotalAwardsNumber {
+  font-size: 86px;
+  font-weight: 600;
+  color: #fdae1e;
+}
+
+/* ---------- Overview ---------- */
+
+/* ---------- Work ---------- */
+
+.work-page {
+  width: 100%;
+  background: #333;
+  padding: 4rem 0;
+}
+.work-inner-wrapper {
+  text-align: center;
+}
+.work-topic {
+  color: #fdae1e;
+  font-size: 34pt;
+  font-weight: 100;
+}
+.work-topic b {
+  font-size: 34pt;
+  font-weight: 600;
+}
+.work-items-wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
+  row-gap: 3rem;
+}
+.work-item {
+  position: relative;
+}
+.work-item-title {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+/* ---------- Work ---------- */
+
+/* ---------- Service ---------- */
+
+.service-page {
+  width: 100%;
+  height: 520px;
+  background: #666;
+  padding: 4rem 0;
+}
+.service-inner-wrapper {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+}
+.service-topic {
+  color: #fdae1e;
+  font-size: 34pt;
+  font-weight: 100;
+}
+.service-topic b {
+  font-size: 34pt;
+  font-weight: 600;
+}
+.service-inner-wrapper p {
+  width: 60%;
+  margin: 2rem auto;
+  color: #fff;
+}
+.service-items-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.service-item button {
+  color: #fff;
+  border: 1px solid #fff;
+  background: none;
+  padding: 4px 1.4rem;
+  transition: 0.2s ease-in-out;
+  white-space: nowrap;
+}
+.service-item button:hover {
+  border: 1px solid #fdae1e;
+  color: #fdae1e;
+}
+
+/* ---------- Service ---------- */
+
+/* ---------- Contact ---------- */
+
+.contact-page {
+  width: 100%;
+  padding: 4rem 0;
+  background: #555;
+}
+.contact-findus-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.findus-topic {
+  color: #fdae1e;
+  font-size: 34pt;
+  font-weight: 100;
+}
+.findus-topic b {
+  font-size: 34pt;
+  font-weight: 600;
+}
+.contact-findus-info h2 {
+  color: #fdae1e;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+}
+.contact-form-topic {
+  color: #fdae1e;
+  font-size: 34pt;
+  font-weight: 100;
+}
+.contact-form-topic b {
+  font-size: 34pt;
+  font-weight: 600;
+}
+.findus-address {
+  color: #fff;
+}
+.findus-phone {
+  font-size: 22px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.findus-phone i {
+  color: #fdae1e;
+  font-size: 28px;
+}
+.findus-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.findus-email i {
+  color: #fdae1e;
+  font-size: 28px;
+}
+.findus-email-items-wrapper span {
+  display: block;
+  color: #fff;
+}
+.findus-skype {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+.findus-skype i {
+  color: #fdae1e;
+  font-size: 28px;
+}
+.contact-findus-info button {
+  color: #fdae1e;
+  border: 1px solid #fdae1e;
+  background: none;
+  padding: 4px 1.4rem;
+  transition: 0.2s ease-in-out;
+  white-space: nowrap;
+  margin-top: 1.6rem;
+}
+.contact-findus-info button:hover {
+  border: 1px solid #fdae1e;
+  background: #fdae1e;
+  color: #fff;
+}
+
+.contact-form-wrapper {
+  margin-top: 4rem;
+  text-align: center;
+}
+.contact-form-wrapper p {
+  color: #fff;
+  margin: 1rem 0 3rem 0;
+}
+.contact-form-items-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.contact-form-item {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 1rem;
+}
+.contact-form-item input,
+.contact-form-item textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  outline: none;
+}
+.contact-form-item input::placeholder,
+.contact-form-item textarea::placeholder {
+  color: #fff;
+}
+.contact-form-items-wrapper button {
+  color: #fdae1e;
+  border: 1px solid #fdae1e;
+  background: none;
+  padding: 4px 1.4rem;
+  transition: 0.2s ease-in-out;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+.contact-form-items-wrapper button:hover {
+  border: 1px solid #fdae1e;
+  background: #fdae1e;
+  color: #fff;
+}
+
+/* ---------- Contact ---------- */

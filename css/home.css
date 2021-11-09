@@ -174,10 +174,14 @@
   display: grid;
   grid-template-columns: 250px 250px 250px;
   justify-content: center;
-  row-gap: 3rem;
+  gap: 3rem;
+  margin-top: 3rem;
 }
 .work-item {
   position: relative;
+}
+.work-item img {
+  width: 100%;
 }
 .work-item-title {
   position: absolute;
@@ -246,7 +250,7 @@
 .contact-page {
   width: 100%;
   padding: 4rem 0;
-  background: #555;
+  background: #333;
 }
 .contact-findus-wrapper {
   display: flex;

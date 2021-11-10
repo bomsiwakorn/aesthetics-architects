@@ -123,19 +123,26 @@
 
 .overview-page {
   width: 100%;
-  height: 330px;
-  background-color: #777;
+  height: 340px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../asset/home/bg-overview.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .overview-inner-wrapper {
   width: 100%;
-  height: 330px;
+  height: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
 .overview-item {
-  text-align: center;
+  display: grid;
+  justify-items: center;
+  row-gap: 1rem;
 }
 .overview-item-title {
   font-size: 18px;
@@ -144,7 +151,7 @@
 #YearOfExperienceNumber,
 #OurProjectsNumber,
 #TotalAwardsNumber {
-  font-size: 86px;
+  font-size: 34pt;
   font-weight: 600;
   color: #fdae1e;
 }
@@ -156,7 +163,11 @@
 .work-page {
   width: 100%;
   background: #333;
-  padding: 4rem 0;
+  padding: 4rem 0 6rem 0;
+  background-image: url('../asset/home/bg-line.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .work-inner-wrapper {
   text-align: center;
@@ -179,6 +190,40 @@
 }
 .work-item {
   position: relative;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.work-more-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.work-item:hover .work-more-overlay {
+  opacity: 1;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease-in-out;
+}
+.work-item:hover .work-more-overlay span {
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  border: 6px solid #fdae1e;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .work-item img {
   width: 100%;
@@ -200,8 +245,12 @@
 .service-page {
   width: 100%;
   height: 520px;
-  background: #666;
   padding: 4rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../asset/home/bg-service.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .service-inner-wrapper {
   width: 100%;
@@ -219,7 +268,7 @@
 }
 .service-inner-wrapper p {
   width: 60%;
-  margin: 2rem auto;
+  margin: 1.6rem auto 3rem auto;
   color: #fff;
 }
 .service-items-wrapper {
@@ -250,7 +299,11 @@
 .contact-page {
   width: 100%;
   padding: 4rem 0;
-  background: #333;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('../asset/home/bg-contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .contact-findus-wrapper {
   display: flex;

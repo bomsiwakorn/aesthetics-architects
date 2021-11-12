@@ -451,6 +451,31 @@
   color: #fdae1e;
 }
 
+@media screen and (max-width: 1400px) {
+  .service-items-wrapper {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 995px) {
+  .service-page {
+    height: 660px;
+  }
+  .service-inner-wrapper {
+    height: 660px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-page {
+    height: 1000px;
+  }
+  .service-inner-wrapper {
+    height: 1000px;
+  }
+  .service-items-wrapper {
+    flex-direction: column;
+  }
+}
+
 /* ---------- Service ---------- */
 
 /* ---------- Contact ---------- */

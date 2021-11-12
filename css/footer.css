@@ -63,3 +63,17 @@
   color: #fff;
   font-size: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-menu-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-copyright-wrapper {
+    margin-top: 2rem;
+    line-height: 16px;
+  }
+  .footer-messenger-btn {
+    top: 83%;
+  }
+}

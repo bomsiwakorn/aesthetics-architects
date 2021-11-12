@@ -4,12 +4,12 @@
   width: 100%;
   position: absolute;
   top: 0;
-  height: 100px;
+  height: 80px;
   z-index: 1;
 }
 .navbar-inner-wrapper {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,40 +20,102 @@
 .navbar-menu-wrapper {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1.5rem;
 }
 .navbar-menu-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4px;
+  cursor: pointer;
 }
 .navbar-menu-list div {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #fff;
   border-radius: 100px;
+  transition: 0.3s ease-in-out;
+}
+.navbar-menu-list:hover div {
+  background: #fdae1e;
 }
 .navbar-menu-social a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 .navbar-menu-social a i {
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+}
+.navbar-menu-social a i:hover {
+  color: #fdae1e;
 }
 
 /* ---------- Navbar ---------- */
 
 /* ---------- Banner ---------- */
 
+.carousel {
+  position: static !important;
+}
 .carousel-indicators {
   right: auto !important;
   opacity: 1 !important;
+  bottom: 2rem !important;
 }
 .carousel-indicators [data-bs-target] {
   opacity: 1 !important;
+  height: 4px !important;
 }
 .carousel-indicators .active {
   background-color: #fdae1e !important;
+}
+/* .banner-m {
+  display: none;
+} */
+
+.banner-img-1,
+.banner-img-2,
+.banner-img-3,
+.banner-img-4,
+.banner-img-5,
+.banner-img-6 {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-img-1 {
+  background-image: url('../asset/home/banner/banner1.png');
+}
+.banner-img-2 {
+  background-image: url('../asset/home/banner/banner2.jpg');
+}
+.banner-img-3 {
+  background-image: url('../asset/home/banner/banner3.jpg');
+}
+.banner-img-4 {
+  background-image: url('../asset/home/banner/banner4.png');
+}
+.banner-img-5 {
+  background-image: url('../asset/home/banner/banner5.jpg');
+}
+.banner-img-6 {
+  background-image: url('../asset/home/banner/banner6.jpg');
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-indicators {
+    right: 0 !important;
+  }
+  /* .banner-m {
+    display: block;
+  }
+  .banner-d {
+    display: none;
+  } */
 }
 
 /* ---------- Banner ---------- */

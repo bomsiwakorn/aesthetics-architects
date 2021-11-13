@@ -181,11 +181,11 @@
 }
 .about-topic {
   color: #fdae1e;
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 100;
 }
 .about-topic b {
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 600;
 }
 .about-items-wrapper {
@@ -244,6 +244,16 @@
   }
   .about-items-wrapper {
     grid-template-columns: 1fr;
+  }
+  .about-topic b {
+    display: block;
+  }
+  .about-items-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-info-wrapper {
+    padding: 0 1rem;
   }
 }
 
@@ -313,11 +323,11 @@
 }
 .work-topic {
   color: #fdae1e;
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 100;
 }
 .work-topic b {
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 600;
 }
 .work-items-wrapper {
@@ -326,6 +336,17 @@
   justify-content: center;
   gap: 3rem;
   margin-top: 3rem;
+  position: relative;
+}
+.work-bg-text {
+  position: absolute;
+  top: 50%;
+  left: -260px;
+  transform: translateY(-50%) rotate(270deg);
+  font-size: 200px;
+  font-weight: 700;
+  color: #444;
+
 }
 .work-item {
   position: relative;
@@ -376,9 +397,29 @@
   white-space: nowrap;
   font-size: 18px;
 }
+@media screen and (max-width: 1400px) {
+  .work-bg-text {
+    left: -340px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .work-bg-text {
+    left: -290px;
+    font-size: 140px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .work-items-wrapper {
     grid-template-columns: 180px 180px 180px;
+  }
+  .work-bg-text {
+    left: -180px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .work-bg-text {
+    left: -300px;
+    font-size: 140px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -394,6 +435,9 @@
   }
   .work-item img {
     width: 320px;
+  }
+  .work-bg-text {
+    display: none;
   }
 }
 
@@ -418,15 +462,15 @@
 }
 .service-topic {
   color: #fdae1e;
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 100;
 }
 .service-topic b {
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 600;
 }
 .service-inner-wrapper p {
-  width: 60%;
+  width: 480px;
   margin: 1.6rem auto 3rem auto;
   color: #fff;
 }
@@ -474,6 +518,9 @@
   .service-items-wrapper {
     flex-direction: column;
   }
+  .service-inner-wrapper p {
+    width: 94%;
+    margin: 1.6rem auto 3rem auto;
 }
 
 /* ---------- Service ---------- */
@@ -496,11 +543,11 @@
 }
 .findus-topic {
   color: #fdae1e;
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 100;
 }
 .findus-topic b {
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 600;
 }
 .contact-findus-info h2 {
@@ -511,11 +558,11 @@
 }
 .contact-form-topic {
   color: #fdae1e;
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 100;
 }
 .contact-form-topic b {
-  font-size: 34pt;
+  font-size: clamp(22pt, 2.5vw, 34pt);
   font-weight: 600;
 }
 .findus-address {

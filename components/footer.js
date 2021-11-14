@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
               </div>
             </div>
             <div class="footer-copyright-wrapper">
-              <span>© Copyright 2021|Aesthetics Architects Co.,Ltd.|All Rights Reserved.|Designed by Belong-to</span></a>
+              <span>© Copyright 2021 | Aesthetics Architects Co.,Ltd. | All Rights Reserved. | Designed by Belong-to</span></a>
             </div>
             <div class="footer-messenger-btn">
               <a href="#"><i class="fab fa-facebook-messenger"></i></a>
@@ -28,8 +28,8 @@ class Footer extends HTMLElement {
           </div>
         </div>
       </footer>
-    `;
+    `
   }
 }
 
-customElements.define('footer-page', Footer);
+customElements.define('footer-page', Footer)

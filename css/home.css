@@ -22,8 +22,16 @@
   align-items: center;
   gap: 1.5rem;
 }
+.nav-menu-all {
+  display: flex;
+  gap: 3rem;
+}
+.nav-menu-all li a {
+  text-decoration: none;
+  color: #fff;
+}
 .navbar-menu-list {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4px;
   cursor: pointer;
@@ -50,6 +58,16 @@
 }
 .navbar-menu-social a i:hover {
   color: #fdae1e;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu-list {
+    display: grid;
+  }
+  .nav-menu-all,
+  .navbar-menu-social {
+    display: none;
+  }
 }
 
 /* ---------- Navbar ---------- */
@@ -101,6 +119,7 @@
 }
 .banner-img-6 {
   background-image: url('../asset/home/banner/banner6.jpg');
+  background-position: 50% 100% !important;
 }
 .banner-text-name {
   position: absolute;
@@ -266,7 +285,7 @@
   height: 340px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('../asset/home/bg-overview.jpg');
-  background-position: center;
+  background-position: 50% 70%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -297,11 +316,13 @@
 }
 @media screen and (max-width: 768px) {
   .overview-page {
-    height: 620px;
+    height: 540px;
+    background-position: 50% 100% !important;
   }
   .overview-inner-wrapper {
-    height: 620px;
+    height: 540px;
     flex-direction: column;
+    gap: 3rem;
   }
 }
 

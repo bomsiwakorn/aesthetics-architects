@@ -601,42 +601,22 @@
 .findus-address {
   color: #fff;
 }
-.findus-phone {
-  font-size: 22px;
+.findus-contact-info-wrapper {
+  font-size: 16px;
   color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 1rem 0;
-}
-.findus-phone i {
-  color: #fdae1e;
-  font-size: 28px;
-}
-.findus-email {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-.findus-email i {
-  color: #fdae1e;
-  font-size: 28px;
-}
-.findus-email-items-wrapper span {
-  display: block;
-  color: #fff;
-}
-.findus-skype {
-  color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20px 1fr;
   align-items: center;
   gap: 1.2rem;
   margin: 1rem 0;
 }
-.findus-skype i {
+.findus-contact-info-wrapper i {
   color: #fdae1e;
-  font-size: 28px;
+  font-size: 22px;
+}
+.findus-contact-text-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .contact-findus-info button {
   color: #fdae1e;

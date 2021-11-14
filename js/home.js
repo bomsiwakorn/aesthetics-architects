@@ -66,15 +66,37 @@ let isShowAboutMenu = false
 function toggleSubMenu() {
   const aboutMenu = document.querySelector('.navbar-menu-sub-items')
   const iconArrowAbout = document.querySelector('.nav-menu-all li div i')
+
   if (isShowAboutMenu) {
     aboutMenu.style.setProperty('padding', '0', 'important')
     aboutMenu.style.height = '0'
     iconArrowAbout.style.transform = 'rotate(0deg)'
     isShowAboutMenu = false
+    // if (window.innerWidth <= 768) {
+    //   aboutMenu.style.position = 'none'
+    //   aboutMenu.style.display = 'none'
+    // }
   } else {
+    // if (window.innerWidth <= 768) {
+    //   aboutMenu.style.position = 'ralative'
+    //   aboutMenu.style.display = 'block'
+    // }
     aboutMenu.style.height = '128px'
     aboutMenu.style.setProperty('padding', '1rem', 'important')
     iconArrowAbout.style.transform = 'rotate(180deg)'
     isShowAboutMenu = true
   }
+}
+
+function openSidebar() {
+  const sidebar = document.querySelector('.nav-menu-all')
+  const closeIcon = document.querySelector('.icon-close-sidebar')
+  sidebar.style.left = '0'
+  closeIcon.style.display = 'flex'
+}
+function closeSidebar() {
+  const sidebar = document.querySelector('.nav-menu-all')
+  const closeIcon = document.querySelector('.icon-close-sidebar')
+  sidebar.style.left = '1000px'
+  closeIcon.style.display = 'none'
 }

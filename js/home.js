@@ -1,6 +1,7 @@
 window.onscroll = () => {
   animateOverviewNumber()
-  toggleShowNavbar()
+  animateShowNavbar()
+  animateAboutPage()
 }
 
 let viewed = false
@@ -53,12 +54,33 @@ function animateOverviewNumber() {
   // }
 }
 
-function toggleShowNavbar() {
+function animateShowNavbar() {
   const navbar = document.getElementById('NavbarPage')
   if (window.pageYOffset > 0) {
     navbar.style.background = 'rgba(0, 0, 0, 0.4)'
   } else {
     navbar.style.background = 'none'
+  }
+}
+
+let showedCardAbout = false
+function animateAboutPage() {
+  const image = document.querySelector('.about-image-wrapper')
+  const info = document.querySelector('.about-info-wrapper')
+  const aboutPage = document.getElementById('AboutPage')
+  const halfWindowPageY = window.pageYOffset / 2
+  const distance = aboutPage.offsetTop - halfWindowPageY
+  if (distance < window.pageYOffset && !showedCardAbout) {
+    if (window.innerWidth <= 768) {
+      image.style.top = '0'
+      info.style.bottom = '0'
+      info.style.height = '100%'
+      info.style.padding = '1rem'
+    } else {
+      image.style.left = '0'
+      info.style.right = '0'
+    }
+    showedCardAbout = true
   }
 }
 
@@ -72,15 +94,7 @@ function toggleSubMenu() {
     aboutMenu.style.height = '0'
     iconArrowAbout.style.transform = 'rotate(0deg)'
     isShowAboutMenu = false
-    // if (window.innerWidth <= 768) {
-    //   aboutMenu.style.position = 'none'
-    //   aboutMenu.style.display = 'none'
-    // }
   } else {
-    // if (window.innerWidth <= 768) {
-    //   aboutMenu.style.position = 'ralative'
-    //   aboutMenu.style.display = 'block'
-    // }
     aboutMenu.style.height = '128px'
     aboutMenu.style.setProperty('padding', '1rem', 'important')
     iconArrowAbout.style.transform = 'rotate(180deg)'

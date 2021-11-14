@@ -286,13 +286,23 @@
   margin-bottom: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
+  /* position: relative; */
+}
+.about-image-wrapper {
+  position: relative;
+  left: 50%;
+  top: 0;
+  transition: 0.4s ease-in-out;
 }
 .about-image-wrapper img {
   display: block;
   width: 100%;
 }
 .about-info-wrapper {
+  position: relative;
+  right: 50%;
   height: 125%;
   display: flex;
   flex-direction: column;
@@ -301,6 +311,7 @@
   background: #333;
   padding: 0 5rem;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out;
 }
 .about-info-wrapper p {
   color: #fff;
@@ -331,6 +342,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .about-page {
+    padding: 2rem 0;
+  }
   .about-page > .container {
     max-width: 100% !important;
     padding: 0 !important;
@@ -345,8 +359,17 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  .about-image-wrapper {
+    left: 0;
+    z-index: 5;
+  }
   .about-info-wrapper {
+    bottom: 100%;
     padding: 0 1rem;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 4;
   }
 }
 
@@ -517,6 +540,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .work-page {
+    padding: 2.5rem 0 4rem 0;
+  }
   .work-page > .container {
     max-width: 100%;
     padding: 0 0 0 1.4rem;
@@ -605,10 +631,11 @@
 }
 @media screen and (max-width: 768px) {
   .service-page {
-    height: 1000px;
+    height: 900px;
+    padding: 2.5rem 0;
   }
   .service-inner-wrapper {
-    height: 1000px;
+    height: 900px;
   }
   .service-items-wrapper {
     flex-direction: column;
@@ -756,6 +783,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .contact-page {
+    padding: 2.5rem 0;
+  }
   .contact-findus-map iframe {
     max-width: 100% !important;
   }

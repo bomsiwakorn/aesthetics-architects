@@ -87,17 +87,26 @@ function animateAboutPage() {
 let isShowAboutMenu = false
 function toggleSubMenu() {
   const aboutMenu = document.querySelector('.navbar-menu-sub-items')
-  const iconArrowAbout = document.querySelector('.nav-menu-all li div i')
+  const iconArrowAboutM = document.querySelector('.icon-arrow-sub-menu-about-m')
+  const iconArrowAboutD = document.querySelector('.icon-arrow-sub-menu-about-d')
 
   if (isShowAboutMenu) {
     aboutMenu.style.setProperty('padding', '0', 'important')
     aboutMenu.style.height = '0'
-    iconArrowAbout.style.transform = 'rotate(0deg)'
+    if (window.innerWidth <= 768) {
+      iconArrowAboutM.style.transform = 'rotate(0deg)'
+    } else {
+      iconArrowAboutD.style.transform = 'rotate(0deg)'
+    }
     isShowAboutMenu = false
   } else {
     aboutMenu.style.height = '128px'
     aboutMenu.style.setProperty('padding', '1rem', 'important')
-    iconArrowAbout.style.transform = 'rotate(180deg)'
+    if (window.innerWidth <= 768) {
+      iconArrowAboutM.style.transform = 'rotate(180deg)'
+    } else {
+      iconArrowAboutD.style.transform = 'rotate(180deg)'
+    }
     isShowAboutMenu = true
   }
 }

@@ -115,6 +115,9 @@
 .icon-close-sidebar:hover .line2 {
   background: #fdae1e;
 }
+.navbar-menu-item-about-m {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .navbar-menu-list {
     display: grid;
@@ -141,6 +144,12 @@
   }
   .navbar-menu-sub-items li a {
     color: #fff;
+  }
+  .navbar-menu-item-about-m {
+    display: block;
+  }
+  .navbar-menu-item-about-d {
+    display: none;
   }
 }
 
@@ -253,6 +262,10 @@
 @media screen and (max-width: 550px) {
   .banner-text-name {
     font-size: 54px;
+  }
+  .banner-text-sub {
+    font-size: 18px;
+    width: 95%;
   }
 }
 @media screen and (max-width: 440px) {
@@ -545,20 +558,29 @@
     padding: 2.5rem 0 4rem 0;
   }
   .work-page > .container {
-    max-width: 100%;
+    width: 100%;
     padding: 0 0 0 1.4rem;
   }
   .work-items-wrapper {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    gap: 1.4rem;
     flex-wrap: nowrap;
     overflow-x: auto;
+    text-align: left;
+  }
+  .work-item {
+    width: 320px;
   }
   .work-item img {
     width: 320px;
   }
   .work-bg-text {
     display: none;
+  }
+  .work-inner-wrapper {
+    text-align: left;
   }
 }
 

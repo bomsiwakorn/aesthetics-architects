@@ -84,6 +84,9 @@
 .navbar-menu-social a i:hover {
   color: #fdae1e;
 }
+.menu-social-wrapper-m {
+  display: none;
+}
 .icon-close-sidebar {
   width: 24px;
   height: 24px;
@@ -150,6 +153,13 @@
   }
   .navbar-menu-item-about-d {
     display: none;
+  }
+  .menu-social-wrapper-m {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .menu-social-wrapper-m li a i {
+    font-size: 20px;
   }
 }
 

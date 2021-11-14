@@ -2,14 +2,15 @@
 
 .navbar-page {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: 80px;
+  height: 70px;
   z-index: 2;
+  transition: 0.3s ease-in-out;
 }
 .navbar-inner-wrapper {
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,13 +27,33 @@
   display: flex;
   gap: 3rem;
 }
+.nav-menu-all li,
 .nav-menu-all li a {
   text-decoration: none;
   color: #fff;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
+.nav-menu-all li > div:hover,
 .nav-menu-all li a:hover {
   color: #fdae1e;
+}
+.navbar-menu-sub-items {
+  width: 150px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 !important;
+  margin-top: 1.5rem !important;
+  line-height: 2rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.navbar-menu-sub-items li a {
+  color: #222;
+}
+.nav-menu-all li div i {
+  transition: 0.2s ease-in-out;
 }
 .navbar-menu-list {
   display: none;

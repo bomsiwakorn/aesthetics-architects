@@ -43,6 +43,14 @@
 .footer-copyright-wrapper span {
   font-size: 12px;
 }
+.footer-copyright-wrapper span a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.footer-copyright-wrapper span a:hover {
+  color: #fdae1e;
+}
 .footer-messenger-btn {
   position: absolute;
   top: 50%;

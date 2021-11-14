@@ -132,12 +132,11 @@
     flex-direction: column;
     gap: 1.6rem;
     transition: 0.4s ease-in-out;
-    z-index: 9999999999999999999 !important;
+    z-index: 99 !important;
   }
   .navbar-menu-sub-items {
     position: relative;
     margin-top: 0 !important;
-
     background: none;
   }
   .navbar-menu-sub-items li a {

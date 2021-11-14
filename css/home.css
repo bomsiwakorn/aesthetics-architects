@@ -5,8 +5,8 @@
   position: fixed;
   top: 0;
   height: 70px;
-  z-index: 2;
   transition: 0.3s ease-in-out;
+  z-index: 98 !important;
 }
 .navbar-inner-wrapper {
   width: 100%;
@@ -22,6 +22,8 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  position: relative;
+  /* z-index: 9999999999999999999 !important; */
 }
 .nav-menu-all {
   display: flex;
@@ -126,12 +128,13 @@
     position: fixed;
     top: 0;
     left: 1000px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.88);
     padding: 4rem 2rem !important;
     width: 300px;
     flex-direction: column;
     gap: 1.6rem;
     transition: 0.4s ease-in-out;
+    z-index: 9999999999999999999 !important;
   }
   .navbar-menu-sub-items {
     position: relative;
@@ -155,6 +158,7 @@
   right: auto !important;
   opacity: 1 !important;
   bottom: 2rem !important;
+  z-index: 9 !important;
 }
 .carousel-indicators [data-bs-target] {
   opacity: 1 !important;

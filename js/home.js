@@ -117,6 +117,7 @@ function openSidebar() {
   sidebar.style.left = '0'
   sidebar.style.opacity = '1'
   closeIcon.style.display = 'flex'
+  document.querySelector('html').style.overflow = 'hidden'
 }
 function closeSidebar() {
   const sidebar = document.querySelector('.nav-menu-all')
@@ -124,4 +125,5 @@ function closeSidebar() {
   sidebar.style.left = '800px'
   sidebar.style.opacity = '0'
   closeIcon.style.display = 'none'
+  document.querySelector('html').style.overflow = 'auto'
 }

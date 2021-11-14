@@ -120,6 +120,6 @@ function openSidebar() {
 function closeSidebar() {
   const sidebar = document.querySelector('.nav-menu-all')
   const closeIcon = document.querySelector('.icon-close-sidebar')
-  sidebar.style.left = '1000px'
+  sidebar.style.left = '800px'
   closeIcon.style.display = 'none'
 }

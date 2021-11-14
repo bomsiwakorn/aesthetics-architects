@@ -569,7 +569,7 @@
 .service-page {
   width: 100%;
   height: 520px;
-  padding: 4rem 0;
+
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../asset/home/bg-service.jpg');
   background-repeat: no-repeat;
@@ -577,6 +577,7 @@
   background-size: cover;
 }
 .service-inner-wrapper {
+  padding: 4rem 0;
   width: 100%;
   height: 520px;
   text-align: center;
@@ -633,10 +634,10 @@
 @media screen and (max-width: 768px) {
   .service-page {
     height: 900px;
-    padding: 2.5rem 0;
   }
   .service-inner-wrapper {
     height: 900px;
+    padding: 2.5rem 0;
   }
   .service-items-wrapper {
     flex-direction: column;
@@ -659,12 +660,14 @@
 
 .contact-page {
   width: 100%;
-  padding: 4rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url('../asset/home/bg-contact.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.contact-inner-wrapper {
+  padding: 4rem 0;
 }
 .contact-findus-wrapper {
   display: flex;
@@ -776,6 +779,9 @@
   background: #fdae1e;
   color: #fff;
 }
+.google-map-address {
+  filter: grayscale(10%) invert(90%) contrast(88%);
+}
 
 @media screen and (max-width: 1200px) {
   .contact-findus-wrapper {
@@ -784,7 +790,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .contact-page {
+  .contact-inner-wrapper {
     padding: 2.5rem 0;
   }
   .contact-findus-map iframe {

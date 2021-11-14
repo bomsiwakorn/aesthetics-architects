@@ -19,12 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <style>
-      .google-map-address {
-        filter: grayscale(10%) invert(90%) contrast(88%);
-      }
-    </style>
   </head>
   <body>
     <div id="NavbarPage" class="navbar-page">
@@ -46,10 +45,10 @@
                   <li><a href="">Partner</a></li>
                 </ul>
               </li>
-              <li><a href="">Our Service</a></li>
+              <li><a href="#ServicePage">Our Service</a></li>
               <li><a href="">Awards</a></li>
               <li><a href="">Works</a></li>
-              <li><a href="">Find Us</a></li>
+              <li><a href="#ContactPage">Find Us</a></li>
             </ul>
             <div class="navbar-menu-list" onclick="openSidebar()">
               <div></div>
@@ -364,5 +363,13 @@
     <script src="./js/global.js"></script>
     <script src="./js/home.js"></script>
     <script src="./components/footer.js"></script>
+
+    <script>
+      const scroll = new SmoothScroll('a[href*="#"]', {
+        header: '[data-scroll-header]',
+        speed: 400,
+        speedAsDuration: true
+      });
+    </script>
   </body>
 </html>

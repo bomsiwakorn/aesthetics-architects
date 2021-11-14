@@ -29,6 +29,10 @@
 .nav-menu-all li a {
   text-decoration: none;
   color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.nav-menu-all li a:hover {
+  color: #fdae1e;
 }
 .navbar-menu-list {
   display: none;

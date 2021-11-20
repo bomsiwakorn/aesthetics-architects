@@ -38,7 +38,11 @@
 .nav-menu-all li a:hover {
   color: #fdae1e;
 }
-.navbar-menu-sub-items {
+.navbar-menu-sub-items-m {
+  display: none;
+}
+.navbar-menu-sub-items,
+.navbar-menu-sub-items-m {
   width: 150px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
@@ -49,7 +53,8 @@
   overflow: hidden;
   transition: 0.2s ease-in-out;
 }
-.navbar-menu-sub-items li a {
+.navbar-menu-sub-items li a,
+.navbar-menu-sub-items-m li a {
   color: #222;
 }
 .nav-menu-all li div {
@@ -142,12 +147,17 @@
     transition: 0.8s ease-in-out;
     z-index: 99 !important;
   }
-  .navbar-menu-sub-items {
+  .navbar-menu-sub-items-m {
+    display: block;
+  }
+  .navbar-menu-sub-items,
+  .navbar-menu-sub-items-m {
     position: relative;
     margin-top: 0 !important;
     background: none;
   }
-  .navbar-menu-sub-items li a {
+  .navbar-menu-sub-items li a,
+  .navbar-menu-sub-items-m li a {
     color: #fff;
   }
   .navbar-menu-item-about-m {

@@ -6,17 +6,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <navbar-page></navbar-page>
+
+    <div id="OurStory" class="our-story">
+      <div class="container">
+        <div class="our-story-inner-wrapper">
+          <div class="our-story-topic">ABOUT</div>
+          <p>
+            The company was founded by the group of architects who have been
+            practicing mainly in the area of architectural aspects. As we have
+            our background in terms of URBAN DESIGN, it is concentrated in the
+            way architectural building will merge with human. It therefore
+            applies to our recent; an innovative design.
+          </p>
+          <p>
+            From our experience, we find ourselves able to maintain
+            architectural concept through the final work, as other designers
+            fail to understand the architectural concept.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="TeamPage" class="team-page">
+      <div class="container">
+        <div class="team-inner-wrapper">
+          <div class="team-topic">TEAM</div>
+          <div class="team-image-cover-wrapper">
+            <div class="image-cover-item"></div>
+            <div class="image-cover-item"></div>
+          </div>
+          <div class="team-profile-wrapper">
+            <div
+              class="team-profile-item"
+              onmouseover="handleHoverImageProfile(0)"
+              onmouseout="handleUnHoverImageProfile(0)"
+            >
+              <div class="team-profile-img">
+                <img src="./asset/about/team/Nadadhorn 1.jpg" alt="Profile" />
+              </div>
+              <div class="team-profile-name">
+                Nadadhorn <br />
+                Dhamabutra
+              </div>
+              <div class="team-profile-position">Founder and President</div>
+            </div>
+            <div
+              class="team-profile-item"
+              onmouseover="handleHoverImageProfile(1)"
+              onmouseout="handleUnHoverImageProfile(1)"
+            >
+              <div class="team-profile-img">
+                <img src="./asset/about/team/Veerachat 2.jpg" alt="Profile" />
+              </div>
+              <div class="team-profile-name">
+                Veerachat <br />
+                Phromsorn
+              </div>
+              <div class="team-profile-position">
+                Managing Director / Architect
+              </div>
+            </div>
+            <div
+              class="team-profile-item"
+              onmouseover="handleHoverImageProfile(2)"
+              onmouseout="handleUnHoverImageProfile(2)"
+            >
+              <div class="team-profile-img">
+                <img src="./asset/about/team/Niphon 1.jpg" alt="Profile" />
+              </div>
+              <div class="team-profile-name">
+                Niphon <br />
+                Phandee
+              </div>
+              <div class="team-profile-position">Deputy Managing Director</div>
+            </div>
+            <div
+              class="team-profile-item"
+              onmouseover="handleHoverImageProfile(3)"
+              onmouseout="handleUnHoverImageProfile(3)"
+            >
+              <div class="team-profile-img">
+                <img
+                  src="./asset/about/team/Thunthamronk 1.jpg"
+                  alt="Profile"
+                />
+              </div>
+              <div class="team-profile-name">
+                Thunthamronk <br />
+                Athithanitjirachot
+              </div>
+              <div class="team-profile-position">Design Director</div>
+            </div>
+            <div
+              class="team-profile-item"
+              onmouseover="handleHoverImageProfile(4)"
+              onmouseout="handleUnHoverImageProfile(4)"
+            >
+              <div class="team-profile-img">
+                <img src="./asset/about/team/L1002663 2.jpg" alt="Profile" />
+              </div>
+              <div class="team-profile-name">
+                Manop <br />
+                Sae-ue
+              </div>
+              <div class="team-profile-position">Chief of Production</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Experiences" class="experiences-bg">
+      <div class="container">
+        <div class="experiences-inner-wrapper1">
+          <div class="experiences-topic">
+            <b>EXPERIENCES</b> WITH HOTEL OPERATORS
+          </div>
+          <div class="experiences-items-wrapper1">
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(0)"
+              onmouseout="handleUnHoverImageExperiences1(0)"
+              onclick="selectExperiences1(0)"
+            >
+              <img
+                src="./asset/about/logo/mandarin-oriental-white.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">
+                  Mandarin Oriental Hotels Group
+                </li>
+                <div class="experiences-info1">
+                  For Mandarin Oriental DharaDhevi Chiangmai (2004)
+                </div>
+              </div>
+            </div>
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(1)"
+              onmouseout="handleUnHoverImageExperiences1(1)"
+              onclick="selectExperiences1(1)"
+            >
+              <img
+                src="./asset/about/logo/accor--eps--vector-logo-white.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">Accor Hotels Group</li>
+                <div class="experiences-info1">
+                  For Ibis Pattaya , Ibis Phuket , Ibis Bangkok (2005)
+                </div>
+              </div>
+            </div>
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(2)"
+              onmouseout="handleUnHoverImageExperiences1(2)"
+              onclick="selectExperiences1(2)"
+            >
+              <img
+                src="./asset/about/logo/jw-marriott-grand-rapids-vector-logo-black-01.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">JW Marriott Hotels Group</li>
+                <div class="experiences-info1">For Marriott Samui (2010)</div>
+              </div>
+            </div>
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(3)"
+              onmouseout="handleUnHoverImageExperiences1(3)"
+              onclick="selectExperiences1(3)"
+            >
+              <img
+                src="./asset/about/logo/hilton-international-vector-logo-white.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">Hilton Hotels Group</li>
+                <div class="experiences-info1">For Conrad Samui (2009)</div>
+              </div>
+            </div>
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(4)"
+              onmouseout="handleUnHoverImageExperiences1(4)"
+              onclick="selectExperiences1(4)"
+            >
+              <img
+                src="./asset/about/logo/intercontinental-hotels-resorts-vector-logo-black-01.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">Intercontinental Hotels Group</li>
+                <div class="experiences-info1">
+                  For Intercontinental Resort Samui (2009)
+                </div>
+              </div>
+            </div>
+            <div
+              class="experiences1-item"
+              onmouseover="handleHoverImageExperiences1(5)"
+              onmouseout="handleUnHoverImageExperiences1(5)"
+              onclick="selectExperiences1(5)"
+            >
+              <img
+                src="./asset/about/logo/the-ritz-carlton--eps--vector-logo-white.svg"
+                alt="Logo"
+              />
+              <div class="experiences-text-wrapper-m">
+                <li class="experiences-name1">
+                  The Ritz-Carlton Hotel Company
+                </li>
+                <div class="experiences-info1">
+                  For The Ritz-Carlton at Royal Rajhadumri
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experiences-text-wrapper">
+            <li id="ExperiencesName1" class="experiences-name1"></li>
+            <div id="ExperiencesInfo1" class="experiences-info1"></div>
+          </div>
+        </div>
+        <div class="experiences-inner-wrapper2">
+          <div class="experiences-topic">
+            <b>EXPERIENCES</b> WITH REAL EXTATE DEVELOPER COMPANY
+          </div>
+          <div class="experiences-items-wrapper2">
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(0)"
+              onmouseout="handleUnHoverImageExperiences2(0)"
+              onclick="selectExperiences2(0)"
+            >
+              <img
+                src="./asset/about/logo/property-perfect-white.svg"
+                alt="Logo"
+              />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">I condo Sukhumvit 103</li>
+                <div class="text-experience2-info">
+                  For Property Perfect PCL.(2010)
+                </div>
+                <li class="text-experience2-name">Metro Sky Kaset</li>
+                <div class="text-experience2-info">
+                  For Property Perfect PCL.(2011)
+                </div>
+                <li class="text-experience2-name">Metro Sky Prachachuen</li>
+                <div class="text-experience2-info">
+                  For Property Perfect PCL.(2012)
+                </div>
+                <li class="text-experience2-name">Metro Sky Rama 4</li>
+                <div class="text-experience2-info">
+                  For Property Perfect PCL.(2013)
+                </div>
+              </ul>
+            </div>
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(1)"
+              onmouseout="handleUnHoverImageExperiences2(1)"
+              onclick="selectExperiences2(1)"
+            >
+              <img src="./asset/about/logo/sc-asset-white.svg" alt="Logo" />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">The Crest Sukhumvit 24</li>
+                <div class="text-experience2-info">
+                  For SC Asset Corporation PCL.(2011)
+                </div>
+              </ul>
+            </div>
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(2)"
+              onmouseout="handleUnHoverImageExperiences2(2)"
+              onclick="selectExperiences2(2)"
+            >
+              <img src="./asset/about/logo/sansiri-white.svg" alt="Logo" />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">
+                  Setthasiri Onnut-Srinakarindra
+                </li>
+                <div class="text-experience2-info">For San siri PCL.(2011)</div>
+                <li class="text-experience2-name">Narasiri By Sansiri</li>
+                <div class="text-experience2-info">For Sansiri PCL.(2012)</div>
+              </ul>
+            </div>
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(3)"
+              onmouseout="handleUnHoverImageExperiences2(3)"
+              onclick="selectExperiences2(3)"
+            >
+              <img src="./asset/about/logo/pruksa-white.svg" alt="Logo" />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">The Connect By Pruksa</li>
+                <div class="text-experience2-info">
+                  For Pruksa Real Estate PCL.(2009)
+                </div>
+                <li class="text-experience2-name">Pruksa Ville By Pruksa</li>
+                <div class="text-experience2-info">
+                  For Pruksa Real Estate PCL.(2009)
+                </div>
+              </ul>
+            </div>
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(4)"
+              onmouseout="handleUnHoverImageExperiences2(4)"
+              onclick="selectExperiences2(4)"
+            >
+              <img src="./asset/about/logo/ananda-white.svg" alt="Logo" />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">Atoll Java Bay</li>
+                <div class="text-experience2-info">
+                  Ananda Development PCL.(2013)
+                </div>
+              </ul>
+            </div>
+            <div
+              class="experiences2-item"
+              onmouseover="handleHoverImageExperiences2(5)"
+              onmouseout="handleUnHoverImageExperiences2(5)"
+              onclick="selectExperiences2(5)"
+            >
+              <img src="./asset/about/logo/REIGNWOOD - Logo 2.svg" alt="Logo" />
+              <ul class="experiences2-text-wrapper-m">
+                <li class="text-experience2-name">Wentworth Golf Club</li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">Wentwort Driving Range</li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">
+                  Kis international school Lumlookka
+                </li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">Reignwood Sport Club</li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">
+                  Reignwood retirement Center
+                </li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">Reignwood Estate</li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">Reignwood Golf Estate</li>
+                <div class="text-experience2-info"></div>
+                <li class="text-experience2-name">Private Residence</li>
+                <div class="text-experience2-info"></div>
+              </ul>
+            </div>
+          </div>
+          <ul id="ExperiencesName2" class="experiences2-text-wrapper"></ul>
+        </div>
+      </div>
+    </div>
+
+    <footer-page></footer-page>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="./js/global.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
   </body>
 </html>

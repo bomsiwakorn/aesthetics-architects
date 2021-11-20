@@ -1,7 +1,7 @@
 window.onscroll = () => {
   animateOverviewNumber()
-  animateShowNavbar()
   animateAboutPage()
+  animateShowNavbar()
 }
 
 let viewed = false
@@ -54,15 +54,6 @@ function animateOverviewNumber() {
   // }
 }
 
-function animateShowNavbar() {
-  const navbar = document.getElementById('NavbarPage')
-  if (window.pageYOffset > 0) {
-    navbar.style.background = 'rgba(0, 0, 0, 0.4)'
-  } else {
-    navbar.style.background = 'none'
-  }
-}
-
 let showedCardAbout = false
 function animateAboutPage() {
   const image = document.querySelector('.about-image-wrapper')
@@ -84,9 +75,41 @@ function animateAboutPage() {
   }
 }
 
+function animateShowNavbar() {
+  const navbar = document.getElementById('NavbarPage')
+  if (window.pageYOffset > 0) {
+    navbar.style.background = 'rgba(0, 0, 0, 0.4)'
+  } else {
+    navbar.style.background = 'none'
+  }
+}
+
+function openSidebar() {
+  const sidebar = document.querySelector('.nav-menu-all')
+  const closeIcon = document.querySelector('.icon-close-sidebar')
+  sidebar.style.left = '0'
+  sidebar.style.opacity = '1'
+  closeIcon.style.display = 'flex'
+  document.querySelector('html').style.overflow = 'hidden'
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector('.nav-menu-all')
+  const closeIcon = document.querySelector('.icon-close-sidebar')
+  sidebar.style.left = '800px'
+  sidebar.style.opacity = '0'
+  closeIcon.style.display = 'none'
+  document.querySelector('html').style.overflow = 'auto'
+}
+
 let isShowAboutMenu = false
 function toggleSubMenu() {
-  const aboutMenu = document.querySelector('.navbar-menu-sub-items')
+  let aboutMenu
+  if (window.innerWidth <= 768) {
+    aboutMenu = document.querySelector('.navbar-menu-sub-items-m')
+  } else {
+    aboutMenu = document.querySelector('.navbar-menu-sub-items')
+  }
   const iconArrowAboutM = document.querySelector('.icon-arrow-sub-menu-about-m')
   const iconArrowAboutD = document.querySelector('.icon-arrow-sub-menu-about-d')
 
@@ -109,21 +132,4 @@ function toggleSubMenu() {
     }
     isShowAboutMenu = true
   }
-}
-
-function openSidebar() {
-  const sidebar = document.querySelector('.nav-menu-all')
-  const closeIcon = document.querySelector('.icon-close-sidebar')
-  sidebar.style.left = '0'
-  sidebar.style.opacity = '1'
-  closeIcon.style.display = 'flex'
-  document.querySelector('html').style.overflow = 'hidden'
-}
-function closeSidebar() {
-  const sidebar = document.querySelector('.nav-menu-all')
-  const closeIcon = document.querySelector('.icon-close-sidebar')
-  sidebar.style.left = '800px'
-  sidebar.style.opacity = '0'
-  closeIcon.style.display = 'none'
-  document.querySelector('html').style.overflow = 'auto'
 }

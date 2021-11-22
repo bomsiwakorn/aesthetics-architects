@@ -66,33 +66,6 @@ const imagesColor1 = {
   5: './asset/about/logo/the-ritz-carlton--eps--vector-logo-colour.svg',
 }
 
-// const text1 = {
-//   0: {
-//     name: 'Mandarin Oriental Hotels Group',
-//     info: 'For Mandarin Oriental DharaDhevi Chiangmai (2004)',
-//   },
-//   1: {
-//     name: 'Accor Hotels Group',
-//     info: 'For Ibis Pattaya , Ibis Phuket , Ibis Bangkok (2005)',
-//   },
-//   2: {
-//     name: 'JW Marriott Hotels Group',
-//     info: 'For Marriott Samui (2010)',
-//   },
-//   3: {
-//     name: 'Hilton Hotels Group',
-//     info: 'For Conrad Samui (2009)',
-//   },
-//   4: {
-//     name: 'Intercontinental Hotels Group',
-//     info: 'For Intercontinental Resort Samui (2009)',
-//   },
-//   5: {
-//     name: 'The Ritz-Carlton Hotel Company',
-//     info: 'For The Ritz-Carlton at Royal Rajhadumri',
-//   },
-// }
-
 let experiences1SelectedIndex = 0
 let experiences1PrevSelectIndex = 0
 
@@ -108,7 +81,6 @@ function selectExperiences1(index) {
   }
 
   const experiences1 = document.querySelectorAll('.experiences1-item')
-
   experiences1[experiences1PrevSelectIndex].children[0].src =
     imagesDefault1[experiences1PrevSelectIndex]
 
@@ -118,6 +90,7 @@ function selectExperiences1(index) {
 }
 
 function handleHoverImageExperiences1(index) {
+  selectExperiences1(index)
   if (experiences1SelectedIndex !== index) {
     const experiences1 = document.querySelectorAll('.experiences1-item')
     experiences1[index].children[0].style.opacity = '0'
@@ -163,17 +136,6 @@ let experiences2PrevSelectIndex = 0
 selectExperiences2(experiences2SelectedIndex)
 function selectExperiences2(index) {
   experiences2PrevSelectIndex = experiences2SelectedIndex
-
-  // const experiencesName2 = document.getElementById('ExperiencesName2')
-  // experiencesName2.innerHTML = ''
-  // text2[index].forEach((text, i) => {
-  //   experiencesName2.innerHTML += `
-  //     <li class="text-experience2-name">${text.name}</li>
-  //     <div class="text-experience2-info">${text.info}</div>
-  //   `
-  // })
-
-  // if (window.innerWidth <= 991) {
   const experienceTextWrapper = document.querySelectorAll(
     '[class^="experiences2-text-wrapper-m"]'
   )
@@ -181,7 +143,6 @@ function selectExperiences2(index) {
   if (experiences2PrevSelectIndex !== index) {
     experienceTextWrapper[experiences2PrevSelectIndex].style.display = 'none'
   }
-  // }
 
   const experiences2 = document.querySelectorAll('.experiences2-item')
 
@@ -194,6 +155,7 @@ function selectExperiences2(index) {
 }
 
 function handleHoverImageExperiences2(index) {
+  selectExperiences2(index)
   if (experiences2SelectedIndex !== index) {
     const experiences2 = document.querySelectorAll('.experiences2-item')
     experiences2[index].children[0].style.opacity = '0'

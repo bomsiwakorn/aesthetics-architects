@@ -176,3 +176,87 @@ function handleUnHoverImageExperiences2(index) {
     }, 150)
   }
 }
+
+function openModalProfile(index) {
+  const profile = {
+    0: {
+      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      info: `
+        <div class="modal-profile-name">Mr. Nadadhorn Dhamabutra</div>
+        <div class="modal-profile-position">Founder and President of Aesthetics Group</div>
+        <p class="modal-profile-text">Nadadhorn Dhamabutra founded Aesthetics Architects in 1992. He is the president of Aesthetics Group, a multidisciplinary ERM which include Aesthetics Creatects and Imagineers, Aesthetics Interior The Spa Studio and Aesthetics System.</p>
+        <p class="modal-profile-text">Nadadhorn attained his Bachelor of Architecture degree from Chulalongkorn University in 1983. He furthered his studies at University of California, Los Angeles, USA in 1985, where he obtained a Master of Architecture degree specializing in Urban Design. In 1990, he completed a mini Masters in Business Administration at Chulalongkorn University.  For over 15 years, Nadadhorn shared his knowledge and experience as a professor and mentor at Rangsit University Architectural School from 1990 – 2021.</p>
+        <p class="modal-profile-text">Nadadhorn’s work arises from the goal of creating buildings and spaces with complete positive intentions. “Transcendence” is a good word to describe his work as he goes above and beyond the limits in utilizing materials. His designs somehow transcend what most architects ‘normally’ build into something much more impressive and awe-inspiring.</p>
+      `,
+    },
+    1: {
+      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      info: `
+        <div class="modal-profile-name">Mr. Veerachat Phromsorn</div>
+        <div class="modal-profile-position">Managing Director / Architect</div>
+        <p class="modal-profile-text">After receiving his Bachelor of Architecture degree from Rangsit University in 1997, Veerachat began his career at Aesthetics Architects. He went on to attain his Masters of Architecture degree from University of Newcastle, Australia, graduating in 2001. He continued his career with Aesthetics Architects following his return back to Thailand. With hard work and dedication, Veerachat was promoted to Managing Director in 2006.</p>
+        <p class="modal-profile-text">In his service to the profession, Veerachat has served as an active member of the Association of Siamese Architects under Royal Patronage (ASA) from 2008 – 2014. He received the first class architect license since 2020. He has also served as project manager for a number of major local and international projects, including Siam Serpentarium, Bangkok, PT Galleria, All Mercedes Benz Showroom in Thailand, Dhara Dhevi Hotel, Chiangmai, Richmond Hotel, Bangkok, All Metro Sky Condominiums, All Metro Lux Condominiums, I Condo by Property Perfect,  Setthasiri Village by Sansiri, Java Bay Village by Ananda, The Connect by Prueksa, The American School Of Bangkok, Kidzania Bangkok, Alpine Golf Clubhouse, Chiangmai, Stone Forest Resort, Kunming, China, Reignwood Park and Wentworth Golf Course Bangkok, etc.</p>
+        <p class="modal-profile-text">With over 20 years’ of work experience, Veerachat has proven to be a professional, creative and innovative architect, committed to ensuring the highest quality of work on all his design projects. He is highly skilled in the development and management of architectural and urban planning processes ranging from high rise buildings, residential estates, educational institutes to his most recent project, zoological architecture.</p>
+        <p class="modal-profile-text">Veerachat exhibits the expected qualities to be a team leader among various working groups. He demonstrates excellent communication skills and the ability to develop and maintain positive internal and external relationships with all levels of management and client</p>
+      `,
+    },
+    2: {
+      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      info: `
+        <div class="modal-profile-name">Niphon Phandee</div>
+        <div class="modal-profile-position">Deputy Managing Director</div>
+        <ul>
+          Design Experience
+          <li>Showroom Isuzu Auto Center</li>
+          <li>Sukhapiban 3 Branch</li>
+          <li>Buddhamonthon 3 Branch</li>
+          <li>Rangsit Branch</li>
+          <li>CS Hotel Pattani</li>
+          <li>Aomthong Village Pattani</li>
+          <li>Clubhouse Pattani</li>
+          <li>Wattanapat Hospital Trang</li>
+          <li>Macro Office Center</li>
+          <li>Paholyothin Branch</li>
+          <li>Sukhumvit 24 Branch</li>
+          <li>Tawanna Bangkapi Branch</li>
+          <li>Max Auto Care and Car Wash</li>
+          <li>Isuzu Hatyai</li>
+          <li>Innovative Building Phatumwan Demonstation School</li>
+          <li>etc.</li>
+          </ul>
+        <ul>
+          <li>Renovation OPD Reception area, Bangkok Hospital</li>
+          <li>ICU room, Ramathibodi Hospital</li>
+          <li>Physician room, Ramathibodi Hospital</li>
+          <li>Macro Office Center, Sukhumvit 24 Branch</li>
+        </ul>
+      `,
+    },
+    3: {
+      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      info: `
+        <div class="modal-profile-name">Mr. Thunthamronk Athithanitjirachot</div>
+        <div class="modal-profile-position">Design Director</div>
+      `,
+    },
+    4: {
+      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      info: `
+      <div class="modal-profile-name">Mr. Manop Sar-ue</div>
+      <div class="modal-profile-position">Chief of Production</div>
+      `,
+    },
+  }
+
+  const image = document.querySelector('.modal-profile-img img')
+  const text = document.querySelector('.modal-profile-text-wrapper')
+  image.src = profile[index].image
+  text.innerHTML = profile[index].info
+
+  const modalProfile = document.querySelector('.modal-profile-info')
+  modalProfile.style.top = '0'
+}
+function closeModalProfile() {
+  const modalProfile = document.querySelector('.modal-profile-info')
+  modalProfile.style.top = '2000px'
+}

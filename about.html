@@ -49,12 +49,13 @@
         <div class="team-inner-wrapper">
           <div class="team-topic">TEAM</div>
           <div class="team-image-cover-wrapper">
-            <div class="image-cover-item"></div>
-            <div class="image-cover-item"></div>
+            <div class="image-cover-item1"></div>
+            <div class="image-cover-item2"></div>
           </div>
           <div class="team-profile-wrapper">
             <div
               class="team-profile-item"
+              onclick="openModalProfile(0)"
               onmouseover="handleHoverImageProfile(0)"
               onmouseout="handleUnHoverImageProfile(0)"
             >
@@ -75,6 +76,7 @@
             </div>
             <div
               class="team-profile-item"
+              onclick="openModalProfile(1)"
               onmouseover="handleHoverImageProfile(1)"
               onmouseout="handleUnHoverImageProfile(1)"
             >
@@ -97,6 +99,7 @@
             </div>
             <div
               class="team-profile-item"
+              onclick="openModalProfile(2)"
               onmouseover="handleHoverImageProfile(2)"
               onmouseout="handleUnHoverImageProfile(2)"
             >
@@ -117,6 +120,7 @@
             </div>
             <div
               class="team-profile-item"
+              onclick="openModalProfile(3)"
               onmouseover="handleHoverImageProfile(3)"
               onmouseout="handleUnHoverImageProfile(3)"
             >
@@ -140,6 +144,7 @@
             </div>
             <div
               class="team-profile-item"
+              onclick="openModalProfile(4)"
               onmouseover="handleHoverImageProfile(4)"
               onmouseout="handleUnHoverImageProfile(4)"
             >
@@ -158,6 +163,24 @@
               </div>
               <div class="team-profile-position">Chief of Production</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-profile-info">
+      <div class="container">
+        <div class="icon-close-modal-profile" onclick="closeModalProfile()">
+          <div class="line1"><div class="line2"></div></div>
+        </div>
+        <div class="modal-profile-inner-wrapper">
+          <div class="modal-profile-img">
+            <img src="" alt="" />
+          </div>
+          <div class="modal-profile-text-wrapper">
+            <!-- <div class="modal-profile-name"></div>
+            <div class="modal-profile-position"></div>
+            <div class="modal-profile-text"></div> -->
           </div>
         </div>
       </div>

@@ -180,7 +180,7 @@ function handleUnHoverImageExperiences2(index) {
 function openModalProfile(index) {
   const profile = {
     0: {
-      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      image: './asset/about/team/Nadadhorn  Dhamabutra (2).jpg',
       info: `
         <div class="modal-profile-name">Mr. Nadadhorn Dhamabutra</div>
         <div class="modal-profile-position">Founder and President of Aesthetics Group</div>
@@ -201,11 +201,11 @@ function openModalProfile(index) {
       `,
     },
     2: {
-      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      image: './asset/about/team/3CCF631B-870C-47AC-8E6A-368DC49BA12C.jpg',
       info: `
         <div class="modal-profile-name">Niphon Phandee</div>
         <div class="modal-profile-position">Deputy Managing Director</div>
-        <ul>
+        <ul class="modal-profile-text">
           Design Experience
           <li>Showroom Isuzu Auto Center</li>
           <li>Sukhapiban 3 Branch</li>
@@ -233,14 +233,14 @@ function openModalProfile(index) {
       `,
     },
     3: {
-      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      image: './asset/about/team/L1002652.JPG',
       info: `
         <div class="modal-profile-name">Mr. Thunthamronk Athithanitjirachot</div>
         <div class="modal-profile-position">Design Director</div>
       `,
     },
     4: {
-      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      image: './asset/about/team/L1002663 x.jpg',
       info: `
       <div class="modal-profile-name">Mr. Manop Sar-ue</div>
       <div class="modal-profile-position">Chief of Production</div>
@@ -254,9 +254,27 @@ function openModalProfile(index) {
   text.innerHTML = profile[index].info
 
   const modalProfile = document.querySelector('.modal-profile-info')
-  modalProfile.style.top = '0'
+  const body = document.querySelector('body')
+  modalProfile.style.display = 'block'
+  setTimeout(() => {
+    modalProfile.style.opacity = '1'
+    modalProfile.style.top = '0'
+  }, 0)
+
+  body.style.overflow = 'hidden'
 }
+
 function closeModalProfile() {
   const modalProfile = document.querySelector('.modal-profile-info')
-  modalProfile.style.top = '2000px'
+  const body = document.querySelector('body')
+  setTimeout(() => {
+    modalProfile.style.top = '1080px'
+    modalProfile.style.opacity = '0'
+  }, 0)
+
+  setTimeout(() => {
+    modalProfile.style.display = 'none'
+  }, 800)
+
+  body.style.overflow = 'auto'
 }

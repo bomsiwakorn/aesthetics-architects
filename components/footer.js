@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
               </div>
             </div>
             <div class="footer-copyright-wrapper">
-              <span>© Copyright 2021 | Aesthetics Architects Co.,Ltd. | All Rights Reserved. | Designed by <a href="http://www.belongto.com/main/index.html" target="_blank">Belong-To</a></span></a>
+              <span>© Copyright 2022 | Aesthetics Architects Co., Ltd. | All Rights Reserved. | Designed by <a href="http://www.belongto.com/main/index.html" target="_blank">Belong-To</a></span></a>
             </div>
             <div class="footer-messenger-btn">
               <a href="#"><i class="fab fa-facebook-messenger"></i></a>

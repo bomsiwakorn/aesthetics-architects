@@ -809,10 +809,14 @@
   background: none;
   color: rgba(255, 255, 255, 0.95);
   outline: none;
+  font-size: 14px;
+  font-weight: 300;
 }
 .contact-form-item input::placeholder,
 .contact-form-item textarea::placeholder {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 300;
 }
 .contact-form-items-wrapper button {
   color: #fdae1e;

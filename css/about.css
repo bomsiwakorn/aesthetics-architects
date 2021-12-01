@@ -425,7 +425,6 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   align-items: center;
-  overflow-y: auto;
 
   column-gap: 3rem;
   row-gap: 2rem;

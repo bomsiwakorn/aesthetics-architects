@@ -773,18 +773,20 @@
   gap: 10px;
 }
 .findus-contact-text-wrapper a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.4s;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: 0.4s !important;
 }
 .findus-contact-text-wrapper span {
-  transition: 0.4s;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: 0.4s !important;
 }
 .findus-contact-text-wrapper a:hover {
-  color: #fdae1e;
+  color: #fdae1e !important;
 }
 .findus-contact-text-wrapper span:hover {
-  color: #fdae1e;
+  color: #fdae1e !important;
 }
 .contact-findus-info button {
   color: #fdae1e;

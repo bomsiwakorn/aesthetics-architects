@@ -445,9 +445,26 @@
 }
 .modal-profile-text {
   color: #fff;
+  font-size: 14px;
+}
+.text-list-sub-item {
+  margin-left: 1rem;
+}
+.text-list-sub-item li {
+  list-style: circle !important;
+}
+.modal-profile-text span {
+  color: #fdae1e;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  display: inline-block;
 }
 .modal-profile-text li {
+  color: #fff;
   list-style: disc;
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 1024px) {

@@ -180,7 +180,7 @@ function handleUnHoverImageExperiences2(index) {
 function openModalProfile(index) {
   const profile = {
     0: {
-      image: './asset/about/team/Nadadhorn  Dhamabutra (2).jpg',
+      image: './asset/about/team/Nadadhorn2.jpeg',
       info: `
         <div class="modal-profile-name">Mr. Nadadhorn Dhamabutra</div>
         <div class="modal-profile-position">Founder and President of Aesthetics Group</div>
@@ -190,7 +190,7 @@ function openModalProfile(index) {
       `,
     },
     1: {
-      image: './asset/about/team/Veerachat Phromsorn (1).jpg',
+      image: './asset/about/team/L1002666.jpg',
       info: `
         <div class="modal-profile-name">Mr. Veerachat Phromsorn</div>
         <div class="modal-profile-position">Managing Director / Architect</div>
@@ -206,25 +206,33 @@ function openModalProfile(index) {
         <div class="modal-profile-name">Niphon Phandee</div>
         <div class="modal-profile-position">Deputy Managing Director</div>
         <ul class="modal-profile-text">
-          Design Experience
+          <span>Design Experience</span>
+          <br />
           <li>Showroom Isuzu Auto Center</li>
-          <li>Sukhapiban 3 Branch</li>
-          <li>Buddhamonthon 3 Branch</li>
-          <li>Rangsit Branch</li>
+          <ul class="text-list-sub-item">
+            <li>Sukhapiban 3 Branch</li>
+            <li>Buddhamonthon 3 Branch</li>
+            <li>Rangsit Branch</li>
+          </ul>
           <li>CS Hotel Pattani</li>
           <li>Aomthong Village Pattani</li>
           <li>Clubhouse Pattani</li>
           <li>Wattanapat Hospital Trang</li>
           <li>Macro Office Center</li>
-          <li>Paholyothin Branch</li>
-          <li>Sukhumvit 24 Branch</li>
-          <li>Tawanna Bangkapi Branch</li>
+          <ul class="text-list-sub-item">
+            <li>Paholyothin Branch</li>
+            <li>Sukhumvit 24 Branch</li>
+            <li>Tawanna Bangkapi Branch</li>
+          </ul>
           <li>Max Auto Care and Car Wash</li>
           <li>Isuzu Hatyai</li>
-          <li>Innovative Building Phatumwan Demonstation School</li>
-          <li>etc.</li>
+          <ul class="text-list-sub-item">
+            <li>Innovative Building Phatumwan Demonstation School</li>
+            <li>etc.</li>
           </ul>
-        <ul>
+          </ul>
+        <ul class="modal-profile-text">
+          <span>Construction Control Experience</span>
           <li>Renovation OPD Reception area, Bangkok Hospital</li>
           <li>ICU room, Ramathibodi Hospital</li>
           <li>Physician room, Ramathibodi Hospital</li>

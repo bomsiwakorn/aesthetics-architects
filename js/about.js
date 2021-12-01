@@ -268,9 +268,11 @@ function openModalProfile(index) {
 
   const modalProfile = document.querySelector('.modal-profile-info')
   const body = document.querySelector('body')
+  // setTimeout(() => {
   modalProfile.style.display = 'block'
+  // modalProfile.style.opacity = '1'
+  // }, 0)
   setTimeout(() => {
-    modalProfile.style.opacity = '1'
     modalProfile.style.top = '0'
   }, 0)
 
@@ -282,7 +284,7 @@ function closeModalProfile() {
   const body = document.querySelector('body')
   setTimeout(() => {
     modalProfile.style.top = '1080px'
-    modalProfile.style.opacity = '0'
+    // modalProfile.style.opacity = '0'
   }, 0)
 
   setTimeout(() => {

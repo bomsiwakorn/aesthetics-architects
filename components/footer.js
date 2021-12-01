@@ -12,10 +12,10 @@ class Footer extends HTMLElement {
               <li><a href="#">Find Us</a></li>
               <div class="footer-menu-social-wrapper">
                 <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/aesthetics.architects" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/aaestheticsarchitects/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
               </div>
             </div>

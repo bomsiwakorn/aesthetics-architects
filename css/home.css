@@ -739,6 +739,9 @@
   margin-top: 2rem;
   font-size: 20px;
 }
+.contact-findus-info a {
+  text-decoration: none;
+}
 .contact-form-topic {
   color: #fdae1e;
   font-size: clamp(22pt, 2.5vw, 34pt);
@@ -767,6 +770,21 @@
 .findus-contact-text-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.findus-contact-text-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.findus-contact-text-wrapper span {
+  transition: 0.4s;
+}
+.findus-contact-text-wrapper a:hover {
+  color: #fdae1e;
+}
+.findus-contact-text-wrapper span:hover {
+  color: #fdae1e;
 }
 .contact-findus-info button {
   color: #fdae1e;

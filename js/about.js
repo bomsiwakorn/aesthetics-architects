@@ -245,6 +245,8 @@ function openModalProfile(index) {
       info: `
         <div class="modal-profile-name">Mr. Thunthamronk Athithanitjirachot</div>
         <div class="modal-profile-position">Design Director</div>
+        <p class="modal-profile-text">Thunthamronk has been working with aesthectics architects for more than 25 years. He has been working on projects of various scales and types including general buildings to large scale complexes suck as 5 stars hotels, Luxury condominiums and Private Luxury Residences</p>
+        <p class="modal-profile-text">Thunthamronk ‘s expertise in design development process, he continue to service in the role as Design Director since 2010.</p>
       `,
     },
     4: {
@@ -252,6 +254,9 @@ function openModalProfile(index) {
       info: `
       <div class="modal-profile-name">Mr. Manop Sar-ue</div>
       <div class="modal-profile-position">Chief of Production</div>
+      <p class="modal-profile-text">Manop Graduated with a Degree in Architecture. He has been with Aesthetics Architects since 1990.</p>
+      <p class="modal-profile-text">He has been working on all kinds of projects from public buildings to private sector.</p>
+      <p class="modal-profile-text">Manop’s expertise in design development process.</p>
       `,
     },
   }

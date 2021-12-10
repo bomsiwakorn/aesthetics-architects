@@ -1,0 +1,39 @@
+.awards-detail {
+  background: #333;
+  padding: 10rem 0 8rem 0;
+}
+.awards-detail-change {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.awards-detail-change li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.awards-detail-info-wrapper {
+  padding: 5rem 0 0 0;
+}
+.awards-detail-info-wrapper h4 {
+  text-align: center;
+  color: #fdae1e;
+  font-weight: 100;
+  font-size: clamp(22pt, 2.5vw, 34pt);
+}
+.awads-detail-description {
+  padding: 3rem 0;
+  line-height: 2rem;
+}
+.description-item {
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 2rem;
+  color: #fff;
+}
+.description-item h5 {
+  color: #fdae1e;
+}

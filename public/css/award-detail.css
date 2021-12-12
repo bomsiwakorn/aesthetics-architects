@@ -24,7 +24,7 @@
   text-align: center;
   color: #fdae1e;
   font-weight: 100;
-  font-size: clamp(22pt, 2.5vw, 34pt);
+  font-size: clamp(20pt, 2.5vw, 24pt);
 }
 .awads-detail-description {
   line-height: 2rem;
@@ -43,7 +43,9 @@
   font-size: 14px;
   margin-top: 8px;
 }
-
+.description-item p {
+  font-size: 14px;
+}
 .awards-detail-share-wrapper li {
   line-height: 3rem;
 }
@@ -53,6 +55,13 @@
   gap: 10px;
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
+}
+.awards-detail-share-wrapper li a:hover {
+  color: #fdae1e;
+}
+.awards-detail-share-wrapper li a:hover i {
+  background: #fdae1e;
 }
 .awards-detail-share-wrapper li a i {
   color: #333;
@@ -63,6 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .container {

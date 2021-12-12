@@ -88,3 +88,25 @@
 .bg-line img {
   width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .awards-detail-all-wrapper {
+    flex-direction: column;
+  }
+  .awards-detail-share-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .description-item {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description-item {
+    width: 98%;
+    grid-template-columns: 140px 1fr;
+    gap: 1rem;
+  }
+}

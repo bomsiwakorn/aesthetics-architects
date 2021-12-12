@@ -788,7 +788,10 @@
 .findus-contact-text-wrapper span:hover {
   color: #fdae1e !important;
 }
-.contact-findus-info button {
+.contact-graphic-map {
+  padding-top: 1.5rem;
+}
+.contact-graphic-map a {
   color: #fdae1e;
   border: 1px solid #fdae1e;
   background: none;
@@ -797,7 +800,7 @@
   white-space: nowrap;
   margin-top: 1.6rem;
 }
-.contact-findus-info button:hover {
+.contact-graphic-map a:hover {
   border: 1px solid #fdae1e;
   background: #fdae1e;
   color: #fff;

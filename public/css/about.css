@@ -229,6 +229,9 @@
   font-size: 14px;
   font-weight: 300;
 }
+.experiences-info1 {
+  margin-left: 1.5rem;
+}
 .experiences-text-wrapper,
 .experiences2-text-wrapper {
   margin: 2rem 0 3rem 0;

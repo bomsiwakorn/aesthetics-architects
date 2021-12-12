@@ -1,6 +1,7 @@
 .awards-detail {
   background: #333;
   padding: 10rem 0 8rem 0;
+  position: relative;
 }
 .awards-detail-change {
   display: flex;
@@ -10,11 +11,14 @@
 .awards-detail-change li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
-
 .awards-detail-info-wrapper {
   padding: 5rem 0 0 0;
+}
+.awards-detail-all-wrapper {
+  display: flex;
+  padding-top: 3rem;
 }
 .awards-detail-info-wrapper h4 {
   text-align: center;
@@ -23,7 +27,6 @@
   font-size: clamp(22pt, 2.5vw, 34pt);
 }
 .awads-detail-description {
-  padding: 3rem 0;
   line-height: 2rem;
 }
 .description-item {
@@ -32,8 +35,55 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   column-gap: 2rem;
+  align-items: center;
   color: #fff;
 }
 .description-item h5 {
   color: #fdae1e;
+  font-size: 14px;
+}
+
+.awards-detail-share-wrapper li {
+  line-height: 3rem;
+}
+.awards-detail-share-wrapper li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.awards-detail-share-wrapper li a i {
+  color: #333;
+  background: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+.awards-bg {
+  position: absolute;
+  font-size: 10rem;
+  color: #fff;
+  right: 0;
+  transform: rotate(-90deg) translateY(-50%);
+  top: 50%;
+}
+
+.bg-line {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 0;
+}
+.bg-line img {
+  width: 100%;
 }

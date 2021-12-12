@@ -35,12 +35,13 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   column-gap: 2rem;
-  align-items: center;
+  /* align-items: center; */
   color: #fff;
 }
 .description-item h5 {
   color: #fdae1e;
   font-size: 14px;
+  margin-top: 8px;
 }
 
 .awards-detail-share-wrapper li {

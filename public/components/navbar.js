@@ -32,8 +32,8 @@ class Navbar extends HTMLElement {
             <li><a href="/work.html">Works</a></li>
             <li><a href="#ContactPage" onclick="closeSidebar()">Find Us</a></li>
             <div class="menu-social-wrapper-m">
-              <li><a href="https://www.facebook.com/aesthetics.architects" target="_blank" onclick="closeSidebar()"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://www.instagram.com/aaestheticsarchitects/" target="_blank" onclick="closeSidebar()"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/Aesthetics-Architects-134045520724930" target="_blank" onclick="closeSidebar()"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://instagram.com/aesarchitects" target="_blank" onclick="closeSidebar()"><i class="fab fa-instagram"></i></a></li>
             </div>
           </ul>
           <div class="navbar-menu-list" onclick="openSidebar()">
@@ -48,10 +48,10 @@ class Navbar extends HTMLElement {
             <div></div>
           </div>
           <div class="navbar-menu-social">
-            <a href="https://www.facebook.com/aesthetics.architects" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/Aesthetics-Architects-134045520724930" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="navbar-menu-social">
-            <a href="https://www.instagram.com/aaestheticsarchitects/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://instagram.com/aesarchitects" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>

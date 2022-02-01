@@ -12,10 +12,10 @@ class Footer extends HTMLElement {
               <li><a href="#">Find Us</a></li>
               <div class="footer-menu-social-wrapper">
                 <li>
-                  <a href="https://www.facebook.com/aesthetics.architects" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/Aesthetics-Architects-134045520724930" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/aaestheticsarchitects/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://instagram.com/aesarchitects" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
               </div>
             </div>
@@ -23,7 +23,7 @@ class Footer extends HTMLElement {
               <span>© Copyright 2022 | Aesthetics Architects Co., Ltd. | All Rights Reserved. | Designed by <a href="http://www.belongto.com/main/index.html" target="_blank">Belong-To</a></span></a>
             </div>
             <div class="footer-messenger-btn">
-              <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+              <a><i class="fab fa-facebook-messenger"></i></a>
             </div>
           </div>
         </div>

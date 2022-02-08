@@ -5,11 +5,11 @@ class Footer extends HTMLElement {
         <div class="container">
           <div class="footer-inner-wrapper">
             <div class="footer-menu-wrapper">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Our Service</a></li>
-              <li><a href="#">Awards</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Find Us</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/#ServicePage">Our Service</a></li>
+              <li><a href="/award.html">Awards</a></li>
+              <li><a href="/work.html">Works</a></li>
+              <li><a href="/#ContactPage">Find Us</a></li>
               <div class="footer-menu-social-wrapper">
                 <li>
                   <a href="https://www.facebook.com/Aesthetics-Architects-134045520724930" target="_blank"><i class="fab fa-facebook-f"></i></a>

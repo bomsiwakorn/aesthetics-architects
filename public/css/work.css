@@ -16,6 +16,7 @@
 .container-images {
   column-count: 3;
   column-gap: 10px;
+  padding: 0 8rem;
 }
 .image-item {
   display: grid;
@@ -23,22 +24,29 @@
   margin-bottom: 10px;
   break-inside: avoid;
   position: relative;
+  overflow: hidden;
 }
 .image-item img {
   max-width: 100%;
   display: block;
+  transition: 0.4s;
+}
+.image-item img:hover {
+  transform: scale(1.1);
+  filter: brightness(70%);
 }
 .image-item > img {
   grid-row: 1 / -1;
   grid-column: 1;
 }
 .image-item span {
-  width: 90%;
   position: absolute;
   color: #fff;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: left !important;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 20px;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .our-awards {
@@ -46,11 +54,14 @@
   }
   .container-images {
     column-count: 2;
+    padding: 0;
   }
   .image-item span {
     width: 95%;
     bottom: 5px;
-    font-size: 14px;
+    left: 6px;
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 

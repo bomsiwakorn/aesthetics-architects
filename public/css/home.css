@@ -661,6 +661,7 @@
   padding: 4px 1.4rem;
   transition: 0.2s ease-in-out;
   white-space: nowrap;
+  cursor: default !important;
 }
 .service-item button:hover {
   border: 1px solid #fdae1e;

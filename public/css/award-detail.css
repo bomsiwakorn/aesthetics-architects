@@ -1,3 +1,13 @@
+.carousel-item {
+  height: 550px;
+  width: 100% !important;
+}
+.carousel-item img {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+}
+
 .awards-detail {
   background: #333;
   padding: 10rem 0 8rem 0;
@@ -23,6 +33,7 @@
 .awards-detail-all-wrapper {
   display: flex;
   padding-top: 2rem;
+  padding: 0 10px;
 }
 .awards-detail-info-wrapper h4 {
   text-align: center;
@@ -95,6 +106,9 @@
   .container {
     padding: 0 !important;
   }
+  .carousel-item {
+    height: 450px;
+  }
 }
 /* .awards-bg {
   position: absolute;
@@ -136,5 +150,11 @@
     width: 98%;
     grid-template-columns: 140px 1fr;
     gap: 1rem;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item img {
+    width: 100%;
   }
 }

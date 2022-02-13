@@ -15,13 +15,14 @@ class Navbar extends HTMLElement {
             <li>
               <div class="navbar-menu-item-about-m" onclick="toggleSubMenu()">About <i class="fas fa-caret-down icon-arrow-sub-menu-about-m"></i></div>
               <ul class="navbar-menu-sub-items-m">
-
+                  <li><a href="/about.html">Company</a></li>
                   <li><a href="/about.html#TeamPage">Team</a></li>
                   <li><a href="/about.html#Experiences">Partner</a></li>
                 </ul>
               <div id="nav-menu-item" class="navbar-menu-item-about-d" onmouseover="toggleSubMenu()" onmouseout="toggleSubMenu()">About <i class="fas fa-caret-down icon-arrow-sub-menu-about-d"></i>
                 <ul class="navbar-menu-sub-items">
 
+                <li><a href="/about.html">Company</a></li>
                 <li><a href="/about.html#TeamPage">Team</a></li>
                 <li><a href="/about.html#Experiences">Partner</a></li>
                 </ul>

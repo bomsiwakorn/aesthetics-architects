@@ -39,7 +39,7 @@ function toggleSubMenu() {
     }
     isShowAboutMenu = false
   } else {
-    aboutMenu.style.height = '94px'
+    aboutMenu.style.height = '122px'
     aboutMenu.style.setProperty('padding', '1rem', 'important')
     if (window.innerWidth <= 768) {
       iconArrowAboutM.style.transform = 'rotate(180deg)'

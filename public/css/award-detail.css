@@ -1,6 +1,15 @@
+@media screen and (max-width: 768px) {
+  .carousel-control-prev {
+    left: 0 !important;
+  }
+  .carousel-control-next {
+    right: 0 !important;
+  }
+}
 .carousel-item {
   height: 550px;
   width: 100% !important;
+  overflow-x: hidden !important;
 }
 .carousel-item img {
   margin: 0 auto;
@@ -93,17 +102,17 @@
   transition: 0.5s;
 }
 
-.container {
+.container2 {
   position: relative;
   padding: 0 2% !important;
 }
 @media screen and (max-width: 1650px) {
-  .container {
+  .container2 {
     padding: 0 10% !important;
   }
 }
 @media screen and (max-width: 992px) {
-  .container {
+  .container2 {
     padding: 0 !important;
   }
   .carousel-item {
